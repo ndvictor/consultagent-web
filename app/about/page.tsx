@@ -88,15 +88,35 @@ export default function AboutPage() {
                 <p className="text-sm uppercase tracking-[0.2em] text-fuchsia-300">
                   Step {index + 1}
                 </p>
-                <h3 className="mt-2 text-lg font-semibold text-white">{step.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-200">{step.text}</p>
+                <h3 className="mt-2 text-lg font-semibold text-white">
+                  {step.title}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-slate-200">
+                  {step.text}
+                </p>
               </div>
             ))}
           </div>
         </div>
 
         <div className="mt-10 rounded-[28px] border border-fuchsia-400/25 bg-[linear-gradient(180deg,rgba(48,19,96,0.92),rgba(15,10,38,0.92))] p-6 shadow-[0_0_42px_rgba(217,70,239,0.18)] backdrop-blur-xl">
-          <h2 className="text-2xl font-semibold text-white">Agent Workflow</h2>
+          <h2 className="text-2xl font-semibold text-white">Architecture</h2>
+          <p className="mt-3 max-w-4xl text-sm leading-7 text-slate-200">
+            The diagram below summarizes the end-to-end ConsultAgent system architecture,
+            from owner input through AWS Bedrock orchestration, supervisor synthesis,
+            and parallel subagent analysis into a final business recommendation.
+          </p>
+
+          <div className="mt-8 overflow-hidden rounded-3xl border border-fuchsia-300/20 bg-white/5 p-4 shadow-[0_0_24px_rgba(217,70,239,0.10)]">
+            <Image
+              src="/architecture/capstone-architecture.png"
+              alt="ConsultAgent capstone architecture diagram"
+              width={1600}
+              height={900}
+              className="h-auto w-full rounded-2xl object-contain"
+              unoptimized
+            />
+          </div>
 
           <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {subagents.map((agent) => (
@@ -120,8 +140,12 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <h3 className="mt-4 text-lg font-semibold text-white">{agent.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-200">{agent.subtitle}</p>
+                <h3 className="mt-4 text-lg font-semibold text-white">
+                  {agent.title}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-slate-200">
+                  {agent.subtitle}
+                </p>
               </div>
             ))}
           </div>
@@ -191,7 +215,10 @@ export default function AboutPage() {
                 <h3 className="text-lg font-semibold text-white">How it works</h3>
                 <ul className="mt-4 space-y-3 text-sm leading-7 text-slate-200">
                   {evaluationPoints.map((point) => (
-                    <li key={point} className="rounded-xl border border-fuchsia-300/10 bg-black/20 px-4 py-3">
+                    <li
+                      key={point}
+                      className="rounded-xl border border-fuchsia-300/10 bg-black/20 px-4 py-3"
+                    >
                       {point}
                     </li>
                   ))}
@@ -201,9 +228,9 @@ export default function AboutPage() {
               <div className="rounded-2xl border border-fuchsia-300/20 bg-[linear-gradient(180deg,rgba(87,29,174,0.24),rgba(19,11,47,0.88))] p-5 shadow-[0_0_26px_rgba(217,70,239,0.10)]">
                 <h3 className="text-lg font-semibold text-white">Key takeaway</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-100">
-                  The visual framework shows that ConsultAgent’s multi-agent structure is not
-                  just more complex architecturally, but also more grounded and more actionable
-                  in practice than the baseline approach.
+                  The visual framework shows that ConsultAgent’s multi-agent structure is
+                  not just more complex architecturally, but also more grounded and more
+                  actionable in practice than the baseline approach.
                 </p>
               </div>
             </div>
