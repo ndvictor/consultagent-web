@@ -49,6 +49,71 @@ function Navbar() {
   );
 }
 
+function Footer() {
+  return (
+    <footer className="border-t border-white/10 bg-[#050816]/80">
+      <div className="mx-auto grid max-w-7xl gap-8 px-6 py-10 md:grid-cols-3">
+        <div>
+          <h3 className="text-lg font-semibold text-white">
+            <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
+              ConsultAgent
+            </span>
+          </h3>
+          <p className="mt-3 max-w-md text-sm leading-6 text-slate-400">
+            A UC Berkeley MIDS Capstone project exploring how multi-agent AI can
+            support small business owners with clearer and more actionable growth
+            strategy.
+          </p>
+        </div>
+
+        <div>
+          <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-fuchsia-300">
+            Team
+          </h4>
+          <ul className="mt-3 space-y-2 text-sm text-slate-300">
+            <li>Brian Feldman</li>
+            <li>Hiro Naito</li>
+            <li>Victor Ndayambaje</li>
+            <li>Peter Valverde</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-fuchsia-300">
+            Links
+          </h4>
+          <div className="mt-3 flex flex-col gap-3 text-sm">
+            <a
+              href="https://github.com/ndvictor/consultagent-web"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-300 transition hover:text-white"
+            >
+              GitHub Repository
+            </a>
+            <a
+              href="/demo"
+              className="text-slate-300 transition hover:text-white"
+            >
+              Live Demo Page
+            </a>
+            <a
+              href="/about"
+              className="text-slate-300 transition hover:text-white"
+            >
+              Architecture Overview
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10 px-6 py-4 text-center text-xs text-slate-500">
+        © 2026 ConsultAgent • UC Berkeley MIDS Capstone
+      </div>
+    </footer>
+  );
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -59,6 +124,7 @@ export default function RootLayout({
       <body className="bg-[#050816] text-white antialiased">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
