@@ -2,13 +2,12 @@ export default function Home() {
   const agents = [
     { name: "Marketing", className: "top-8 left-1/2 -translate-x-1/2" },
     { name: "Competitor", className: "top-32 left-8" },
-    { name: "Revenue", className: "top-32 right-8" },
+    { name: "Revenue Intelligence", className: "top-32 right-8" },
     { name: "Sector", className: "bottom-16 left-24" },
-    { name: "Operations", className: "bottom-16 right-24" },
   ];
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#050816] text-white">
+    <main className="relative min-h-screen overflow-hidden bg-[#050816] text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(168,85,247,0.22),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(236,72,153,0.18),_transparent_25%),linear-gradient(to_bottom,_#0a0f24,_#050816)]" />
       <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(#ffffff_0.6px,transparent_0.6px)] [background-size:28px_28px]" />
 
@@ -102,20 +101,12 @@ export default function Home() {
               filter="url(#glow)"
               opacity="0.8"
             />
-            <path
-              d="M600 280 C680 320, 770 360, 860 430"
-              stroke="url(#lineGlow)"
-              strokeWidth="2.5"
-              strokeDasharray="8 8"
-              filter="url(#glow)"
-              opacity="0.8"
-            />
           </svg>
 
           {agents.map((agent) => (
             <div
               key={agent.name}
-              className={`absolute ${agent.className} w-44 rounded-2xl border border-fuchsia-400/20 bg-white/5 px-5 py-4 text-center shadow-[0_0_35px_rgba(192,132,252,0.18)] backdrop-blur-md`}
+              className={`absolute ${agent.className} w-52 rounded-2xl border border-fuchsia-400/20 bg-white/5 px-5 py-4 text-center shadow-[0_0_35px_rgba(192,132,252,0.18)] backdrop-blur-md`}
             >
               <div className="mx-auto mb-3 h-3 w-3 rounded-full bg-fuchsia-400 shadow-[0_0_18px_rgba(232,121,249,1)]" />
               <p className="text-sm font-semibold text-white sm:text-base">
@@ -144,12 +135,7 @@ export default function Home() {
         </div>
 
         <div className="mx-auto mt-2 grid max-w-6xl gap-4 md:grid-cols-4">
-          {[
-            "Affordable",
-            "Fast",
-            "Actionable",
-            "Growth Focused",
-          ].map((item) => (
+          {["Affordable", "Fast", "Actionable", "Growth Focused"].map((item) => (
             <div
               key={item}
               className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-center text-sm font-medium text-slate-200 backdrop-blur-sm"
