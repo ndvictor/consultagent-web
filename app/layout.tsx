@@ -89,19 +89,27 @@ function Footer() {
               rel="noreferrer"
               className="text-slate-300 transition hover:text-white"
             >
-              GitHub Repository
+              Website Repo
+            </a>
+            <a
+              href="https://github.com/pvalverde1/MIDS-Capstone-ConsultAgent"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-300 transition hover:text-white"
+            >
+              Core Capstone Repo
             </a>
             <a
               href="/demo"
               className="text-slate-300 transition hover:text-white"
             >
-              Live Demo Page
+              Live Demo
             </a>
             <a
               href="/about"
               className="text-slate-300 transition hover:text-white"
             >
-              Architecture Overview
+              Architecture
             </a>
           </div>
         </div>
