@@ -1,9 +1,29 @@
 export default function Home() {
   const agents = [
-    { name: "Marketing", className: "top-8 left-1/2 -translate-x-1/2" },
-    { name: "Competitor", className: "top-32 left-8" },
-    { name: "Revenue Intelligence", className: "top-32 right-8" },
-    { name: "Sector", className: "bottom-16 left-24" },
+    {
+      name: "Marketing",
+      description: "Campaign ideas and customer demand signals",
+      className: "top-8 left-1/2 -translate-x-1/2",
+      width: "w-56",
+    },
+    {
+      name: "Competitor",
+      description: "Competitor pricing, positioning, and gaps",
+      className: "top-32 left-8",
+      width: "w-60",
+    },
+    {
+      name: "Revenue Intelligence",
+      description: "Sales patterns, trends, and growth insights",
+      className: "top-32 right-8",
+      width: "w-64",
+    },
+    {
+      name: "Sector",
+      description: "Industry trends, macro signals, and market context",
+      className: "bottom-16 left-24",
+      width: "w-64",
+    },
   ];
 
   return (
@@ -48,10 +68,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative mx-auto mt-16 h-[560px] max-w-6xl">
+        <div className="relative mx-auto mt-16 h-[620px] max-w-6xl">
           <svg
             className="absolute inset-0 h-full w-full"
-            viewBox="0 0 1200 560"
+            viewBox="0 0 1200 620"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -69,32 +89,39 @@ export default function Home() {
               </filter>
             </defs>
 
+            {/* Marketing -> Center */}
             <path
-              d="M600 280 L600 90"
+              d="M600 145 C600 175, 600 205, 600 238"
               stroke="url(#lineGlow)"
               strokeWidth="2.5"
               strokeDasharray="8 8"
               filter="url(#glow)"
               opacity="0.9"
             />
+
+            {/* Competitor -> Center */}
             <path
-              d="M600 280 C520 260, 420 220, 280 170"
+              d="M290 210 C400 235, 500 255, 560 280"
               stroke="url(#lineGlow)"
               strokeWidth="2.5"
               strokeDasharray="8 8"
               filter="url(#glow)"
               opacity="0.85"
             />
+
+            {/* Revenue -> Center */}
             <path
-              d="M600 280 C680 260, 780 220, 920 170"
+              d="M910 210 C800 235, 700 255, 640 280"
               stroke="url(#lineGlow)"
               strokeWidth="2.5"
               strokeDasharray="8 8"
               filter="url(#glow)"
               opacity="0.85"
             />
+
+            {/* Sector -> Center */}
             <path
-              d="M600 280 C520 320, 430 360, 340 430"
+              d="M350 470 C430 410, 500 360, 560 330"
               stroke="url(#lineGlow)"
               strokeWidth="2.5"
               strokeDasharray="8 8"
@@ -106,16 +133,19 @@ export default function Home() {
           {agents.map((agent) => (
             <div
               key={agent.name}
-              className={`absolute ${agent.className} w-52 rounded-2xl border border-fuchsia-400/20 bg-white/5 px-5 py-4 text-center shadow-[0_0_35px_rgba(192,132,252,0.18)] backdrop-blur-md`}
+              className={`absolute ${agent.className} ${agent.width} rounded-2xl border border-fuchsia-400/20 bg-white/5 px-5 py-4 text-center shadow-[0_0_35px_rgba(192,132,252,0.18)] backdrop-blur-md`}
             >
               <div className="mx-auto mb-3 h-3 w-3 rounded-full bg-fuchsia-400 shadow-[0_0_18px_rgba(232,121,249,1)]" />
               <p className="text-sm font-semibold text-white sm:text-base">
                 {agent.name} Agent
               </p>
+              <p className="mt-2 text-xs leading-5 text-slate-300">
+                {agent.description}
+              </p>
             </div>
           ))}
 
-          <div className="absolute left-1/2 top-1/2 w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-3xl border border-fuchsia-400/30 bg-gradient-to-br from-violet-500/20 to-fuchsia-500/10 p-8 text-center shadow-[0_0_60px_rgba(192,132,252,0.28)] backdrop-blur-xl">
+          <div className="absolute left-1/2 top-1/2 w-[340px] -translate-x-1/2 -translate-y-1/2 rounded-3xl border border-fuchsia-400/30 bg-gradient-to-br from-violet-500/20 to-fuchsia-500/10 p-8 text-center shadow-[0_0_60px_rgba(192,132,252,0.28)] backdrop-blur-xl">
             <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full border border-fuchsia-300/40 bg-fuchsia-500/20 shadow-[0_0_30px_rgba(232,121,249,0.6)]">
               <span className="text-2xl">✦</span>
             </div>
