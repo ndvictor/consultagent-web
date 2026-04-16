@@ -74,10 +74,10 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="relative mx-auto mt-16 h-[1320px] max-w-6xl">
+        <div className="relative mx-auto mt-16 h-[1420px] max-w-6xl">
           <svg
             className="absolute inset-0 h-full w-full"
-            viewBox="0 0 1200 1320"
+            viewBox="0 0 1200 1420"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -129,7 +129,7 @@ export default function Home() {
             />
 
             <path
-              d="M600 680 L600 785"
+              d="M600 680 L600 810"
               stroke="url(#agentLine)"
               strokeWidth="3.2"
               strokeDasharray="10 10"
@@ -204,7 +204,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="absolute left-1/2 top-[820px] w-[520px] -translate-x-1/2 rounded-3xl border border-fuchsia-400/35 bg-[linear-gradient(180deg,rgba(77,24,154,0.92),rgba(30,12,66,0.92))] p-6 shadow-[0_0_44px_rgba(217,70,239,0.24)] backdrop-blur-xl">
+          <div className="absolute left-1/2 top-[860px] w-[520px] -translate-x-1/2 rounded-3xl border border-fuchsia-400/35 bg-[linear-gradient(180deg,rgba(77,24,154,0.92),rgba(30,12,66,0.92))] p-6 shadow-[0_0_44px_rgba(217,70,239,0.24)] backdrop-blur-xl">
             <div className="flex items-center gap-4">
               <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-fuchsia-300/25 bg-white/10 p-3">
                 <Image
@@ -229,7 +229,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="absolute bottom-[170px] left-1/2 grid w-full max-w-[980px] -translate-x-1/2 gap-4 rounded-3xl border border-fuchsia-400/25 bg-[linear-gradient(180deg,rgba(34,14,64,0.86),rgba(16,8,35,0.86))] p-5 shadow-[0_0_32px_rgba(217,70,239,0.14)] backdrop-blur-md md:grid-cols-4">
+          <div className="absolute bottom-[120px] left-1/2 grid w-full max-w-[980px] -translate-x-1/2 gap-4 rounded-3xl border border-fuchsia-400/25 bg-[linear-gradient(180deg,rgba(34,14,64,0.86),rgba(16,8,35,0.86))] p-5 shadow-[0_0_32px_rgba(217,70,239,0.14)] backdrop-blur-md md:grid-cols-4">
             {valueItems.map((item) => (
               <div
                 key={item.title}
