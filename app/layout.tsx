@@ -91,6 +91,14 @@ function Footer() {
               Website Repo
             </a>
             <a
+              href="https://github.com/pvalverde1/MIDS-Capstone-ConsultAgent"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-200 transition hover:text-white"
+            >
+              Core Capstone Repo
+            </a>
+            <a
               href="/demo"
               className="text-slate-200 transition hover:text-white"
             >

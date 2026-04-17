@@ -74,6 +74,77 @@ export default function Home() {
           </p>
         </div>
 
+        <div className="mx-auto mt-14 max-w-6xl">
+          <div className="text-center">
+            <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-300">
+              Why ConsultAgent Matters
+            </p>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+              <span className="bg-gradient-to-r from-violet-200 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent">
+                From business pain point to strategic action
+              </span>
+            </h2>
+          </div>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            <div className="rounded-3xl border border-fuchsia-400/30 bg-[linear-gradient(180deg,rgba(70,18,120,0.92),rgba(24,10,52,0.92))] p-6 shadow-[0_0_34px_rgba(217,70,239,0.16)] backdrop-blur-xl">
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-fuchsia-300/25 bg-white/10 text-2xl">
+                  ⚠️
+                </div>
+                <h3 className="text-2xl font-semibold text-white">Problem</h3>
+              </div>
+              <p className="mt-4 text-sm leading-7 text-slate-200">
+                Small business owners often lack affordable strategic support and do not
+                have time to analyze competitors, operations, and market trends.
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-fuchsia-400/30 bg-[linear-gradient(180deg,rgba(92,24,150,0.92),rgba(30,12,66,0.92))] p-6 shadow-[0_0_34px_rgba(217,70,239,0.18)] backdrop-blur-xl">
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-fuchsia-300/25 bg-white/10 text-2xl">
+                  ✨
+                </div>
+                <h3 className="text-2xl font-semibold text-white">Product</h3>
+              </div>
+              <p className="mt-4 text-sm leading-7 text-slate-200">
+                ConsultAgent is a multi-agent AI advisor that combines business inputs,
+                local market signals, competitor intelligence, and sector knowledge into
+                a structured business review.
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-fuchsia-400/30 bg-[linear-gradient(180deg,rgba(118,30,160,0.92),rgba(38,14,72,0.92))] p-6 shadow-[0_0_34px_rgba(217,70,239,0.20)] backdrop-blur-xl">
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-fuchsia-300/25 bg-white/10 text-2xl">
+                  📈
+                </div>
+                <h3 className="text-2xl font-semibold text-white">Value</h3>
+              </div>
+              <p className="mt-4 text-sm leading-7 text-slate-200">
+                Owners get more grounded, actionable recommendations faster and at a
+                fraction of the cost of traditional consulting.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-4">
+            {[
+              "Affordable strategic support",
+              "Faster business decisions",
+              "Grounded recommendations",
+              "Growth-focused outcomes",
+            ].map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl border border-fuchsia-300/15 bg-white/5 px-4 py-3 text-center text-sm font-medium text-slate-100 shadow-[0_0_18px_rgba(217,70,239,0.08)]"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="relative mx-auto mt-16 h-[1420px] max-w-6xl">
           <svg
             className="absolute inset-0 h-full w-full"
