@@ -95,8 +95,9 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold text-white">Problem</h3>
               </div>
               <p className="mt-4 text-sm leading-7 text-slate-200">
-                Small business owners often lack affordable strategic support and do not
-                have time to analyze competitors, operations, and market trends.
+                Small business owners often lack affordable strategic support and
+                do not have time to analyze competitors, operations, and market
+                trends.
               </p>
             </div>
 
@@ -108,9 +109,9 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold text-white">Product</h3>
               </div>
               <p className="mt-4 text-sm leading-7 text-slate-200">
-                ConsultAgent is a multi-agent AI advisor that combines business inputs,
-                local market signals, competitor intelligence, and sector knowledge into
-                a structured business review.
+                ConsultAgent is a multi-agent AI advisor that combines business
+                inputs, local market signals, competitor intelligence, and sector
+                knowledge into a structured business review.
               </p>
             </div>
 
@@ -122,8 +123,8 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold text-white">Value</h3>
               </div>
               <p className="mt-4 text-sm leading-7 text-slate-200">
-                Owners get more grounded, actionable recommendations faster and at a
-                fraction of the cost of traditional consulting.
+                Owners get more grounded, actionable recommendations faster and
+                at a fraction of the cost of traditional consulting.
               </p>
             </div>
           </div>
@@ -293,8 +294,8 @@ export default function Home() {
                   Strategy Recommendation
                 </h3>
                 <p className="mt-2 text-lg leading-7 text-slate-200">
-                  Clear, actionable recommendations tailored to your business goals
-                  driving growth and success.
+                  Clear, actionable recommendations tailored to your business
+                  goals driving growth and success.
                 </p>
               </div>
             </div>
@@ -308,8 +309,12 @@ export default function Home() {
               >
                 <div className="text-2xl text-fuchsia-300">{item.icon}</div>
                 <div>
-                  <p className="text-base font-semibold text-white">{item.title}</p>
-                  <p className="mt-1 text-xs leading-6 text-slate-200">{item.text}</p>
+                  <p className="text-base font-semibold text-white">
+                    {item.title}
+                  </p>
+                  <p className="mt-1 text-xs leading-6 text-slate-200">
+                    {item.text}
+                  </p>
                 </div>
               </div>
             ))}
@@ -318,10 +323,12 @@ export default function Home() {
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="/demo"
+            href="https://consultagent.streamlit.app/"
+            target="_blank"
+            rel="noreferrer"
             className="rounded-xl bg-gradient-to-r from-fuchsia-600 to-violet-600 px-6 py-3 font-medium text-white shadow-lg shadow-fuchsia-900/30 transition hover:scale-[1.02]"
           >
-            Try Demo
+            Launch Live Demo
           </a>
           <a
             href="/about"

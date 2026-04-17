@@ -9,9 +9,13 @@ export const metadata: Metadata = {
 
 function Navbar() {
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/demo", label: "Demo" },
-    { href: "/about", label: "Architecture" },
+    { href: "/", label: "Home", external: false },
+    {
+      href: "https://consultagent.streamlit.app/",
+      label: "Live Demo",
+      external: true,
+    },
+    { href: "/about", label: "Architecture", external: false },
   ];
 
   return (
@@ -34,15 +38,27 @@ function Navbar() {
         </Link>
 
         <nav className="flex items-center gap-2 rounded-full border border-fuchsia-300/15 bg-white/5 p-1 shadow-[0_0_18px_rgba(217,70,239,0.08)]">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="rounded-full px-4 py-2 text-sm font-medium text-slate-100 transition hover:bg-fuchsia-500/10 hover:text-white"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) =>
+            item.external ? (
+              <a
+                key={item.href}
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full px-4 py-2 text-sm font-medium text-slate-100 transition hover:bg-fuchsia-500/10 hover:text-white"
+              >
+                {item.label}
+              </a>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-full px-4 py-2 text-sm font-medium text-slate-100 transition hover:bg-fuchsia-500/10 hover:text-white"
+              >
+                {item.label}
+              </Link>
+            )
+          )}
         </nav>
       </div>
     </header>
@@ -60,8 +76,9 @@ function Footer() {
             </span>
           </h3>
           <p className="mt-3 max-w-md text-sm leading-6 text-slate-300">
-            A UC Berkeley MIDS Capstone project exploring how multi-agent AI can support
-            small business owners with clearer and more actionable growth strategy.
+            A UC Berkeley MIDS Capstone project exploring how multi-agent AI can
+            support small business owners with clearer and more actionable growth
+            strategy.
           </p>
         </div>
 
@@ -99,7 +116,9 @@ function Footer() {
               Core Capstone Repo
             </a>
             <a
-              href="/demo"
+              href="https://consultagent.streamlit.app/"
+              target="_blank"
+              rel="noreferrer"
               className="text-slate-200 transition hover:text-white"
             >
               Live Demo
