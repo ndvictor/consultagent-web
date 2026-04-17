@@ -201,7 +201,7 @@ export default function Home() {
             />
 
             <path
-              d="M600 690 C600 740, 600 775, 600 820"
+              d="M600 690 C600 760, 600 805, 600 860"
               stroke="url(#agentLine)"
               strokeWidth="3.2"
               strokeDasharray="10 10"
@@ -216,7 +216,7 @@ export default function Home() {
               className={`absolute ${agent.position} w-[21%] rounded-2xl border border-fuchsia-400/35 bg-[linear-gradient(180deg,rgba(58,20,114,0.96),rgba(22,9,52,0.96))] p-5 shadow-[0_0_36px_rgba(217,70,239,0.18)] backdrop-blur-md`}
             >
               <div className="mb-4 flex items-start justify-between gap-3">
-                <div className="flex h-16 w-16 items-center justify-center rounded-xl border border-fuchsia-300/25 bg-black/85 p-2">
+                <div className="flex h-16 w-16 items-center justify-center rounded-xl border border-fuchsia-300/25 bg-black/70 p-2">
                   <Image
                     src={agent.image}
                     alt={agent.title}
@@ -241,7 +241,7 @@ export default function Home() {
 
           <div className="absolute left-1/2 top-[520px] w-[560px] -translate-x-1/2 rounded-3xl border border-fuchsia-400/40 bg-[linear-gradient(180deg,rgba(95,34,168,0.92),rgba(40,16,90,0.92))] p-7 shadow-[0_0_56px_rgba(217,70,239,0.30)] backdrop-blur-xl">
             <div className="flex items-center gap-5">
-              <div className="flex h-20 w-20 items-center justify-center rounded-full border border-fuchsia-300/50 bg-fuchsia-500/20 shadow-[0_0_32px_rgba(232,121,249,0.45)]">
+              <div className="flex h-20 w-20 items-center justify-center rounded-full border border-fuchsia-300/50 bg-black/70 shadow-[0_0_32px_rgba(232,121,249,0.45)]">
                 <Image
                   src="/agents/consultagent-supervisor.png"
                   alt="ConsultAgent Supervisor"
@@ -278,7 +278,7 @@ export default function Home() {
 
           <div className="absolute left-1/2 top-[860px] w-[520px] -translate-x-1/2 rounded-3xl border border-fuchsia-400/35 bg-[linear-gradient(180deg,rgba(77,24,154,0.92),rgba(30,12,66,0.92))] p-6 shadow-[0_0_44px_rgba(217,70,239,0.24)] backdrop-blur-xl">
             <div className="flex items-center gap-4">
-              <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-fuchsia-300/25 bg-white/10 p-3">
+              <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-fuchsia-300/25 bg-black/70 p-3">
                 <Image
                   src="/agents/strategy-recommendation.png"
                   alt="Strategy Recommendation"
