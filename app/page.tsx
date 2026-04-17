@@ -201,7 +201,7 @@ export default function Home() {
             />
 
             <path
-              d="M600 680 L600 810"
+              d="M600 690 C600 740, 600 775, 600 820"
               stroke="url(#agentLine)"
               strokeWidth="3.2"
               strokeDasharray="10 10"
@@ -216,7 +216,7 @@ export default function Home() {
               className={`absolute ${agent.position} w-[21%] rounded-2xl border border-fuchsia-400/35 bg-[linear-gradient(180deg,rgba(58,20,114,0.96),rgba(22,9,52,0.96))] p-5 shadow-[0_0_36px_rgba(217,70,239,0.18)] backdrop-blur-md`}
             >
               <div className="mb-4 flex items-start justify-between gap-3">
-                <div className="flex h-16 w-16 items-center justify-center rounded-xl border border-fuchsia-300/25 bg-white/10 p-2">
+                <div className="flex h-16 w-16 items-center justify-center rounded-xl border border-fuchsia-300/25 bg-black/85 p-2">
                   <Image
                     src={agent.image}
                     alt={agent.title}
